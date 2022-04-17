@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="flex h-screen w-screen items-center justify-center bg-gradient-to-bl from-purple-300 to-sky-200 px-2"
+    >
+      <from
+        id="sign-in-from"
+        class="flex w-full max-w-sm flex-col justify-center gap-10 rounded-lg bg-white px-6 py-10"
+      >
+        <h1 id="sign-in-from-title" class="text-5x1 text-center">登入</h1>
+        <div id="sign-in-input" class="flex w-full flex-col items-center gap-5">
+          <label for="account" class="relative w-full py-1">
+            <input
+              type="text"
+              id="account"
+              class="w-full border-b-2 border-sky-300 py-1 outline-none"
+            />
+            <p
+              id="addr-hint-text"
+              class="absolute top-2 left-0 w-24 cursor-text select-none"
+            >
+              帳號
+            </p>
+          </label>
+          <label for="password" class="relative w-full py-1">
+            <input
+              type="password"
+              id="password"
+              class="w-full border-b-2 border-sky-300 py-1 outline-none"
+            />
+            <p
+              id="passward-hint-text"
+              class="absolute top-2 left-0 w-24 cursor-text select-none"
+            >
+              密碼
+            </p>
+          </label>
+        </div>
+        <a href="" id="forget-passward-link" class="text-sky-400">忘記密碼</a>
+        <button
+          type="submit"
+          id="submit-botton"
+          class="rounded-md bg-sky-500 py-2 text-white"
+        >
+          登入
+        </button>
+      </from>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
