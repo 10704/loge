@@ -15,17 +15,17 @@
         id="sign-in-from"
         class="flex w-full max-w-sm flex-col justify-center gap-10 rounded-lg bg-white px-6 py-10"
       >
-        <h1 id="sign-in-from-title" class="text-5x1 text-center">登入</h1>
+        <h1 id="sign-in-from-title" class="text-center text-5xl">登入</h1>
         <div id="sign-in-input" class="flex w-full flex-col items-center gap-5">
           <label for="account" class="relative w-full py-1">
             <input
               type="text"
               id="account"
-              class="w-full border-b-2 border-sky-300 py-1 outline-none"
+              class="peer w-full border-b-2 border-sky-300 py-1 outline-none"
             />
             <p
               id="addr-hint-text"
-              class="absolute top-2 left-0 w-24 cursor-text select-none"
+              class="absolute top-2 left-0 w-24 cursor-text select-none duration-200 peer-focus:-translate-y-5 peer-focus:text-xs peer-focus:text-sky-400"
             >
               帳號
             </p>
@@ -34,21 +34,26 @@
             <input
               type="password"
               id="password"
-              class="w-full border-b-2 border-sky-300 py-1 outline-none"
+              class="peer w-full border-b-2 border-sky-300 py-1 outline-none"
             />
             <p
               id="passward-hint-text"
-              class="absolute top-2 left-0 w-24 cursor-text select-none"
+              class="absolute top-2 left-0 w-24 cursor-text select-none duration-200 peer-focus:-translate-y-5 peer-focus:text-xs peer-focus:text-sky-400"
             >
               密碼
             </p>
           </label>
         </div>
-        <a href="" id="forget-passward-link" class="text-sky-400">忘記密碼</a>
+        <a
+          href=""
+          id="forget-passward-link"
+          class="text-sky-400 hover:border-b-2 hover:border-sky-400 hover:font-bold"
+          >忘記密碼</a
+        >
         <button
           type="submit"
           id="submit-botton"
-          class="rounded-md bg-sky-500 py-2 text-white"
+          class="rounded-md bg-sky-500 py-2 text-white active:translate-y-1 active:translate-x-1"
         >
           登入
         </button>
